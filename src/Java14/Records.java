@@ -8,6 +8,8 @@ public class Records {
 
     /* Introduced in Java14 */
     /* Records are immutable data classes that requires only name and type of fields */
+    /* All record declarations compile into class which inherits java.lang.Record */
+    /* All fields of record compile into final members which make them un-inheritable and immutable */
     public record Person(String name, String email, LocalDate dob, RecordSupport.Address address) {
 
         /* Records can have static fields and methods */
