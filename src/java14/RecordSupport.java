@@ -1,4 +1,4 @@
-package Java14;
+package java14;
 
 public class RecordSupport {
 

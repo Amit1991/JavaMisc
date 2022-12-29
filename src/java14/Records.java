@@ -1,4 +1,4 @@
-package Java14;
+package java14;
 
 import java.time.LocalDate;
 import java.time.Period;
