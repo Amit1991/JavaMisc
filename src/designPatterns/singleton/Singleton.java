@@ -2,7 +2,7 @@ package designPatterns.singleton;
 
 public class Singleton {
 
-    private static Singleton instance = null;
+    private static volatile Singleton instance = null;
 
     private Singleton() {
 

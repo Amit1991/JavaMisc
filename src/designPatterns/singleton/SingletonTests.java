@@ -15,5 +15,9 @@ public class SingletonTests {
         BillPughSingleton bps2 = BillPughSingleton.getInstanceNew();
 
         System.out.println(bps + " ---- " + bps1 + " ---- " + bps2 + " ---- " + bps.equals(bps1));
+
+        EagerSingleton es = EagerSingleton.instance;
+        EagerSingleton es2 = EagerSingleton.instance;
+        System.out.println(es + " ---- " + es2 + " --- " + es.equals(es2));
     }
 }
