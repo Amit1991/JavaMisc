@@ -68,7 +68,7 @@ public class ReadCSV {
 
     public static void main(String[] args) throws IOException {
 
-        File file = new File("C:\\Users\\amitku\\Downloads\\Book1.csv");
+        File file = new File("D:\\intellij-ws\\JavaMisc\\src\\InterviewQues\\Book1.csv");
         FileReader fr = new FileReader(file);
         int i;
         // Holds true till there is nothing to read
@@ -82,17 +82,17 @@ public class ReadCSV {
 
         Map<String, List<Map<String, Integer>>> marks = new HashMap<>();
         List<Student> students = new ArrayList<>();
-        Stream<String> fs = Files.lines(Path.of("C:\\Users\\amitku\\Downloads\\Book1.csv"));
+        Stream<String> fs = Files.lines(Path.of("D:\\intellij-ws\\JavaMisc\\src\\InterviewQues\\Book1.csv"));
         fs.forEach(a -> {
 
             String[] arr = a.split(",");
-            for (int j = 0; j < arr.length; j++) {
 
                 if(pattern.matcher(arr[1]).matches()
                     && pattern.matcher(arr[3]).matches())
                 {
                     students.add(new Student(arr[0], Integer.parseInt(arr[1])
                             , arr[2], Integer.parseInt(arr[3])));
+
 
                     if(marks.get(arr[0]) == null)
                     {
@@ -102,8 +102,13 @@ public class ReadCSV {
                         data.add(marksData);
                         marks.put(arr[0], data);
                     }
+                    else {
+
+                        Map marksData = new HashMap<>();
+                        marksData.put(arr[2], arr[3]);
+                        marks.get(arr[0]).add(marksData);
+                    } 
                 }
-            }
         });
 
         System.out.println(students);
