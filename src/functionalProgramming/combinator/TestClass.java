@@ -1,7 +1,7 @@
-package combinator;
+package functionalProgramming.combinator;
 
 import java.time.LocalDate;
-import static combinator.ICustomerValidator.*;
+import static functionalProgramming.combinator.ICustomerValidator.*;
 
 public class TestClass {
 

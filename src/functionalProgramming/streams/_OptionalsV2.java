@@ -1,4 +1,4 @@
-package streams;
+package functionalProgramming.streams;
 
 import java.util.Optional;
 

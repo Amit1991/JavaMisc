@@ -1,10 +1,10 @@
-package combinator;
+package functionalProgramming.combinator;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Function;
 
-import static combinator.ValidationResult.*;
+import static functionalProgramming.combinator.ValidationResult.*;
 
 public interface ICustomerValidator extends Function<Customer, ValidationResult> {
 

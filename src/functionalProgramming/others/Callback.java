@@ -1,4 +1,4 @@
-package others;
+package functionalProgramming.others;
 
 import java.util.Scanner;
 import java.util.function.Function;

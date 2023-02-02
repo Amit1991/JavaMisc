@@ -1,6 +1,6 @@
-package imperative;
+package functionalProgramming.imperative;
 
-import streams._Stream;
+import functionalProgramming.streams._Stream;
 
 import java.util.List;
 import java.util.Objects;

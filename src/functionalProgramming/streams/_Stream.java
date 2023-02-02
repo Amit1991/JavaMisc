@@ -1,8 +1,7 @@
-package streams;
+package functionalProgramming.streams;
 
-import imperative.Gender;
+import functionalProgramming.imperative.Gender;
 import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 public class _Stream {

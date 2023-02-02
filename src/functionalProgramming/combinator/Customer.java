@@ -1,4 +1,4 @@
-package combinator;
+package functionalProgramming.combinator;
 
 import java.time.LocalDate;
 

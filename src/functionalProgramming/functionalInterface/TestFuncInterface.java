@@ -1,4 +1,4 @@
-package functionalInterface;
+package functionalProgramming.functionalInterface;
 
 public class TestFuncInterface {
 

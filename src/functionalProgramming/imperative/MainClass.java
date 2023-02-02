@@ -1,9 +1,8 @@
-package imperative;
+package functionalProgramming.imperative;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class MainClass {
 
@@ -33,7 +32,7 @@ public class MainClass {
         System.out.println(females);
 
         people.stream().filter(p -> p.gender.equals(Gender.Female))
-                .collect(Collectors.toList()).forEach(System.out::println);
+                .toList().forEach(System.out::println);
 
         Predicate<Person> transFilter = a -> a.gender.equals(Gender.Transgender);
         people.stream().filter(transFilter).forEach(System.out::println);

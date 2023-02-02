@@ -1,4 +1,4 @@
-package functionalInterface;
+package functionalProgramming.functionalInterface;
 
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;

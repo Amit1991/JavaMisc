@@ -1,4 +1,4 @@
-package imperative;
+package functionalProgramming.imperative;
 
 public enum Gender {
 

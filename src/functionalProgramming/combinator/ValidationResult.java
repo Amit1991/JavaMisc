@@ -1,4 +1,4 @@
-package combinator;
+package functionalProgramming.combinator;
 
 public enum ValidationResult {
 

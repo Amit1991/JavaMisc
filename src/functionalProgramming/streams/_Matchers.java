@@ -1,7 +1,7 @@
-package streams;
+package functionalProgramming.streams;
 
-import imperative.Gender;
-import imperative.Person;
+import functionalProgramming.imperative.Gender;
+import functionalProgramming.imperative.Person;
 
 import java.util.List;
 
