@@ -49,7 +49,7 @@ public class GrizzlyBear {
 	@Override
 	public String toString() {
 		return "GrizzlyBear [isDangerous=" + isDangerous + ", " + (livesIn != null ? "livesIn=" + livesIn + ", " : "")
-				+ (message != null ? "message=" + message + " / " + message.hashCode() : "") + "]";
+				+ (message != null ? "message=" + message + " / " + this.hashCode() : "") + "]";
 		
 	}
 }
