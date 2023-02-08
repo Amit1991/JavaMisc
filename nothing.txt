@@ -1,0 +1,8 @@
+This line of text is added using Try-With-Resources. 0.86389244
+This line of text is added using Try-With-Resources. 0.74984866
+This line of text is added using Try-With-Resources. 0.06026143
+This line of text is added using Try-With-Resources. 0.41500312
+This line of text is added using Try-With-Resources. 0.884049
+This line of text is added using Try-With-Resources. 0.83758456
+This line of text is added using Try-With-Resources. 0.2847877
+This line of text is added using Try-With-Resources. 0.55783075
