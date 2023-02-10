@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 
 public class EmployeeServiceImpl implements EmployeeService {
 
-    Set<Employee> employees;
+    static Set<Employee> employees = new HashSet<>();
 
     @Override
     public void addEmp(int empId, String dept) {

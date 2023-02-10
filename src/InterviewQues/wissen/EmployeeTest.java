@@ -1,5 +1,8 @@
 package InterviewQues.wissen;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class EmployeeTest {
 
     public static void main(String[] args) {
@@ -13,5 +16,14 @@ public class EmployeeTest {
         e.updateEmp(1, "QA");
 
         e.findByDept("HR");
+    }
+
+    @Test
+    public void testAddEmployee() {
+
+        int beforeSize = EmployeeServiceImpl.employees.size();
+        new EmployeeServiceImpl().addEmp(1,"HR");
+
+        Assertions.assertEquals(beforeSize+1, EmployeeServiceImpl.employees.size());
     }
 }
