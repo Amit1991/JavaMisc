@@ -5,18 +5,17 @@ import java.util.List;
 
 public class ImmutableList {
 
-    private final List<String> stringList = new ArrayList<>();
+    private final List<String> stringList;
 
     public ImmutableList(List<String> initParam) {
 
-        this.stringList.addAll(initParam);
+        List<String> strList = new ArrayList<>(initParam);
+        stringList = List.of(strList.toArray(new String[0]));
     }
 
     public List<String> getStringList() {
 
-        List<String> tempList = new ArrayList<>();
-        tempList.addAll(stringList);
-        return tempList;
+        return stringList;
     }
 
     public static void main(String[] args) {
