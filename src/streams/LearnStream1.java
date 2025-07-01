@@ -1,5 +1,8 @@
 package streams;
 
+import dsa.ArrayLists.ArrayList1;
+
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
@@ -23,7 +26,21 @@ public class LearnStream1 {
         System.out.println("-----------------------------------");
         IntStream.range(1,10).asLongStream().forEach(System.out::println);
         System.out.println("-----------------------------------");
-        OptionalInt sum = IntStream.range(1,10).reduce((a, b) -> a+b);
-        System.out.println(sum.getAsInt());
+
+        /* reduce() examples */
+        OptionalInt sum = IntStream.range(1,10).reduce(Integer::sum);
+        //OptionalInt sum = IntStream.range(1,10).reduce((a, b) -> a+b);
+        System.out.println(sum.isPresent() ? sum.getAsInt() : 0);
+
+        OptionalInt product = IntStream.range(1,10).reduce((a, b) -> a*b);
+        System.out.println(product.isPresent() ? product.getAsInt() : 0);
+
+        Optional<Integer> max = Arrays.stream(ArrayList1.data).reduce(Integer::max);
+        //Optional<Integer> max = Arrays.asList(ArrayList1.data).stream().reduce((a, b) -> a > b ? a : b);
+        System.out.println(max.orElse(0));
+
+        Optional<Integer> min = Arrays.stream(ArrayList1.data).reduce(Integer::min);
+        //Optional<Integer> min = Arrays.asList(ArrayList1.data).stream().reduce((a, b) -> a < b ? a : b);
+        System.out.println(min.orElse(0));
     }
 }
